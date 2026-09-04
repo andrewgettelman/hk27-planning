@@ -7,7 +7,7 @@ weight: 1
 
 | Location| Country | Host Instituion | Data Center | Contact | Contact Email | Notes/Status |
 |---|---|---|---|---|---|---|
-| Hamburg | Germany | MPI-Meteorology | DKRZ | Bjorn Stevens | bjorn.stevens@mpimet.mpg.de | |
+| Cologne | Germany | University of Cologne | DKRZ | Elina Plesca, Vera Schemann | vera.schemann@uni-koeln.de, lina.plesca@mpimet.mpg.de | |
 | Zurich | Switzerland | ETH-Zurich	| CSCS (Swiss Supercomputing Center) | Andreas Prein | <andreas.prein@env.ethz.ch> | |
 | Darmstadt	| Germany | EUMETSAT | EUMETSAT | Frank Kaspar | frank.kaspar@eumetsat.int  | |
 | Tokyo | Japan | | | Masaki Satoh | satoh@aori.u-tokyo.ac.jp | |
@@ -15,13 +15,14 @@ weight: 1
 | Boulder |	USA	| CU/NCAR | NCAR | Aneesh Subaraamain, CU; John Clyne, NCAR | <aneeshcs@colorado.edu> <clyne@ucar.edu> | |
 | Sao Paulo	| Brazil |	USP	USP/INPE | |	Rosmeri Porfirio Rocha |	rosmerir.rocha@iag.usp.br | |
 | Reading? | UK	|	MetOffice/UoR |	JASMIN	 | PL Vidale / R Jones / M Mutzfeldeldt |	p.l.vidale@reading.ac.uk | |
+| Shanghai | | | | | | Contact Chao Li, MPI |
+| Beijing | China | IAP/CAS | Earth Lab | | | Contact Chao Li, MPI| 
 | Manila? | Phillipines |	| |			Jane Delfino / Aleguen, Mary Cris |	rpdelfino@up.edu.ph | | 
-| Shanghai | | | | | | |
-| Nairobi 
-| Peru
-| Argentina
-| Korea
-| India
+| Lima | Peru | | | Laura Paccini | lpaccini@pucp.edu.pe | | 
+| Nairobi | | | | | | | 
+| Argentina | | | | | | | 
+| Korea | | | | | | | 
+| India | | | | | | | 
 
 # Other Collaborations
 
