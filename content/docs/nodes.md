@@ -10,7 +10,7 @@ weight: 1
 | Beijing | China | IAP/CAS | Earth Lab | Xiaodong Zheng |  xdzeng@mail.iap.ac.cn | |
 | Boulder |	USA	| CU/NCAR | NCAR | Aneesh Subaraamain, CU; John Clyne, NCAR | <aneeshcs@colorado.edu> <clyne@ucar.edu> | |
 | Cape Town | S. Africa | U. Witswatersand? | | François Engelbrecht |	francois.Engelbrecht@wits.ac.za | |
-| Cologne | Germany | University of Cologne | DKRZ | Elina Plesca, Vera Schemann | vera.schemann@uni-koeln.de, lina.plesca@mpimet.mpg.de | |
+| Cologne | Germany | University of Cologne | DKRZ | Elina Plesca, Vera Schemann | vera.schemann@uni-koeln.de, elina.plesca@mpimet.mpg.de | |
 | Darmstadt	| Germany | EUMETSAT | EUMETSAT | Frank Kaspar | frank.kaspar@eumetsat.int  | |
 | Lima | Peru | | | Laura Paccini | lpaccini@pucp.edu.pe | |
 | Manila? | Phillipines |	| |			Jane Delfino / Aleguen, Mary Cris |	rpdelfino@up.edu.ph | |
