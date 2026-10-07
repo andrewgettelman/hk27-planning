@@ -39,7 +39,7 @@ To build into a table:
 
 The pre-summit hackathon outlined Science Topics of interest, as did some of the other side meetings during the km-scale summit. Possible simulations include: 
 
-- **Initalized Experiments:** Sort DYAMOND1-2 style 30 or 40 day experiments, initialized each month for a specified year (2026 has been proposed for the strong ENSO). The ORCHESTA/ECOMIP period in Aug-Sep 2024 is another possible target. *Goal: Understand how predictability changes in the simulations, also to look at particular events and how they are forecasted.*
+- **Initialized Experiments:** Short DYAMOND1-2 style 30 or 40 day experiments, initialized each month for a specified year (2026 has been proposed for the strong ENSO). The ORCHESTA/ECOMIP period in Aug-Sep 2024 is another possible target. *Goal: Understand how predictability changes in the simulations, also to look at particular events and how they are forecasted.*
 
 - **Climate Feedback Experiments:** Control and SST+4K for 1 year. *Goal: Look at difference responses to idealized (forced) climate change. Cloud feedbacks, convective organization, land surface responses, etc.*
 
