@@ -3,7 +3,7 @@ title: Models participating
 weight: 1
 ---
 
-# Models Potentially participating
+## Models Potentially participating
 
 | Name | Host Instituion | Domain | Notes/Status | Contact |
 |---|---|---|---|---|
@@ -22,9 +22,9 @@ weight: 1
 | UKMO-RAL | Met Office | Regional | | Kendon? |
 
 
-# Potential Simulations Overview
+## Potential Simulations Overview
 
-### Summary
+## Summary
 To build into a table:
 - **Initialized:** 12 x 40 Day initialized experiments from one year to be selected. One could be multi-resolution (20,10,5,2.5km), and multi-physics (with and w/o a convective parameterization)
 - **Events:** A few extra specific event hindcasts of 1-3 weeks (Possibly overlapping with ETCMIP)
@@ -58,11 +58,17 @@ The pre-summit hackathon outlined Science Topics of interest, as did some of the
 - **Non Atmospheric Component Simulations:** Other components (e.g. ocean only, ocean-sea ice, sea-ice only, land only) at km-scale are also possible
 
 
-# Individual Model Comments
+## Individual Model Comments
 
 ### SCREAM
 SCREAM has a control and SST+4K experiment to contribute. There is also a present and pre-industrial aerosol set. SCREAM is interested in doing some of the intialized hindcasts, and looking at the effects of resolution and deep convection. We may also have a regional (N. America) LES simulation at 500m or 200m to contribute.
 
 ### UM
+The Met Office intend to provide two types of simulations. All at 5km horizontal resolution, using either COMORPH scale-aware convective parametrisation, or RAL3 physics (only shallow convective parametrisation)
+
+* **40-day initialised several times per year, foscussing on the year 2026**
+40-day Unified Model global simulations e.g. initialised on ~20th or 1st of each month. These can be linked to cover the entire year of 2026, but also run individually. There is interest in ensembles, so it is likely that certain months will be repeated several times.
+* **Multi-year simulations** 
+8-year global simulations, similar to DYAMOND-3, albeit running 2016-2024
 
 ### Your Model Here
