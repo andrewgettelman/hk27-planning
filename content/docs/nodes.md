@@ -14,8 +14,8 @@ weight: 1
 | Cologne | Germany | University of Cologne | DKRZ | Elina Plesca, Vera Schemann | vera.schemann@uni-koeln.de, elina.plesca@mpimet.mpg.de | |
 | Darmstadt	| Germany | EUMETSAT | EUMETSAT | Frank Kaspar | frank.kaspar@eumetsat.int  | |
 | Lima | Peru | | | Laura Paccini | lpaccini@pucp.edu.pe | |
-| Manila? | Phillipines |	| |			Jane Delfino / Aleguen, Mary Cris |	rpdelfino@up.edu.ph | |
-| Reading? | UK	|	MetOffice/UoR |	JASMIN	 | PL Vidale / R Jones / M Mutzfeldeldt |	p.l.vidale@reading.ac.uk | |
+| Manila | Philippines |	UP / PAGASA | |			Jane Delfino / Aleguen, Mary Cris |	rpdelfino@up.edu.ph | |
+| Leeds (MO as backup) | UK	|	MetOffice/UoR |	JASMIN	 | PL Vidale / R Jones / M Mutzfeldeldt |	p.l.vidale@reading.ac.uk | |
 | Sao Paulo	| Brazil |	USP	USP/INPE | |	Rosmeri Porfirio Rocha |	rosmerir.rocha@iag.usp.br | |
 | Shanghai | | | | | | Contact Chao Li, MPI |
 | Tokyo? | Japan | JAMSTEC? | | Masaki Satoh, Chihiro Kodama | satoh@aori.u-tokyo.ac.jp, kodamac@jamstec.go.jp  | |
