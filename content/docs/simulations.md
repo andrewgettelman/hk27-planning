@@ -28,6 +28,7 @@ Two configurations are used in this category: radiative-convective equilibrium (
    * **$\Delta{t}$**: Time step ($\Delta{t}$) is recommended to be similar across resolutions.
    * **P4K**: Simulation(s) with a constant forcing of +4 K in the SST profile need to be provided for every resolution.
 
+Groups that want to contribute to the Aquaplanet protocol should contact Angel Peinado.
 
 ## <span style="color:darkgreen"> DYAMOND-3: Control, P4K, and aerosol forcing
 
@@ -74,6 +75,8 @@ The DYAMOND-4 protocol is the result of the discussion during the pre-summit hac
    * **Initialization**: Atmosphere is initialized on August 1, 2024. Both land and ocean initialization are up to each modelling group.
    * **Physics**: The model configuration should be similar to the AMIP simulation.
    
+Groups that want to contribute to the DYAMOND-4 protocol should contact Hans Segura.
+
 ## <span style="color:lightgreen"> Initialized
 
 There is strong interest in setting up 40-day simulations of the year 2026, in initialised mode, both atmosphere-only and coupled. Ideas will be
@@ -86,6 +89,7 @@ There is strong interest in setting up 40-day simulations of the year 2026, in i
    * **Physics**: with and without convection parameterization
    * **Options**: specific case studies in hindcast mode, using the same framework, resolution hierarchies around particular months, chasing particular phenomena (and this could include regional downscaling), ECOMIP periods
 
+Groups that want to contribute to Initilized protocol should contact Pier Luigi Vidale.
 
 ## Resume of simulations
 
