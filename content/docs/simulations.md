@@ -1,40 +1,115 @@
 ---
 title: Proposed Simulations
-weight: 1
+weight: 2
 ---
 
 # Summary
-To build into a table:
-- **Initialized:** 12 x 40 Day initialized experiments from one year to be selected. One could be multi-resolution (20,10,5,2.5km), and multi-physics (with and w/o a convective parameterization)
-- **Events:** A few extra specific event hindcasts of 1-3 weeks (Possibly overlapping with ETCMIP)
-- **LES:** Regional or Global sub-km experiments, days to weeks, plus lower resolutions (20,10,5,2.5km)
-- **Aquaplanet**
-- **Aerosol Forcing:** One year twice: present day aerosol and pre-industrial aerosol
-- **Feedbacks:** One year twice: present day and SST+4K
-- **Coupled**
-- **Other Component**
+Discussions during the pre-summit hackathon and km-scale summit highlighted key scientific questions regarding process understanding and predictability that can be addressed in the km-scale climate model community. Those questions have been translated into hypotheses and experiments that guide the simulation structure for the next global km-scale hackathon. For more details, please refer to the [science statement](https://owncloud.gwdg.de/index.php/s/kQjQC3EAucoLp6O).
 
-# Details of Simulations and Motivation
+Three groups of simulations are planned:
+ * **Idealized** -- Coordinated by Angel Peinado, Rosimar Rios-Berrios, and Allison Wing  
+ * **DYAMOND-3, DYAMOND-4 and LES** -- Coordinated by Hans Segura and Daisuke Takasuka 
+ * **Initialized** -- Coordinated by Pier Luigi Vidale and Andrew Gettelmann
 
-The pre-summit hackathon outlined Science Topics of interest, as did some of the other side meetings during the km-scale summit. Possible simulations include: 
 
-- **Initialized Experiments:** Short DYAMOND1-2 style 30 or 40 day experiments, initialized each month for a specified year (2026 has been proposed for the strong ENSO). The ORCHESTA/ECOMIP period in Aug-Sep 2024 is another possible target. *Goal: Understand how predictability changes in the simulations, also to look at particular events and how they are forecasted.*
+# Simulations
 
-- **Climate Feedback Experiments:** Control and SST+4K for 1 year. *Goal: Look at difference responses to idealized (forced) climate change. Cloud feedbacks, convective organization, land surface responses, etc.*
+## <span style="color:orange"> Idealized simulation
 
-- **Specific Event Hindcasts:** Pick a set of extreme events to simulate with initialized (or possibly nudged) simulations, probably 7-14 days. Possiblities are Atmpospheric Rivers, Tropical Cyclones, Extreme rainfall events, heatwaves. Overlaps with Initialized Experiments, ETCMIP *Goal: How do km-scale models simulate particular events, how can they forecast them.*
+Two configurations are used in this category: radiative-convective equilibrium (RCE) and aquaplanets.
+1. **RCE**: Radiative-convective equilibrium simulations using global storm-resolving models have been conducted as part of the Radiative-Convective Equilibrium Model Intercomparison Project (RCEMIP). See [Wing et al., 2018](https://doi.org/10.5194/gmd-11-793-2018) and [Wing et al., 2020](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020MS002138). While simulations have been conducted, climate models are welcome to provide new simulations following the RCEMIP protocol of its Phase II.
+2. **Aquaplanets**: For the aquaplanets, the following protocol is required:
+   * **Surface forcing**: Prescribed constant zonally symmetric sea-surface temperature (SST) QOBS without sea-ice interaction. Meridional SST gradient, with a maximum temperature of $27\degree\mathrm{C}$ at the equator and a minimum of $0\degree\mathrm{C}$ at $60\degree\mathrm{N/S}$.
+   * **Radiation**: Perpetual equinox with a diurnal cycle. Well-mixed greenhouse gases and a constant zonally symmetric ozone profile corresponding to the mean climatology used in AMIP simulations.
+   * **Spin-up**: 3 to 6 months by using a coarser aquaplanet atmospheric state.
+   * **$\int\Delta{t}\partial{t}$**: Time integration ($\int\Delta{t}\partial{t}$) between 3 and 12 months.
+   * **$\Delta{x}$**: Horizontal grid spacing ($\Delta{x}$) of 10 km, 5 km, and 2.5 km.
+   * **$\Delta{z}$**: Vertical grid spacing (($\Delta{z}$)) is optional to each group.
+   * **$\Delta{t}$**: Time step ($\Delta{t}$) is recommended to be similar across resolutions.
+   * **P4K**: Simulation(s) with a constant forcing of +4 K in the SST profile need to be provided for every resolution.
 
-- **Multi-Resolution/Multi-Physics Experiments** It is suggested that some of the specific events or one initialized experiment (1 week to 2 months) could be run at different resolutions, 25km, 12km, down to 3km and 1km (or less for global LES). Some of these could also be done with and without a deep convective parameterization. *Goal: understand the effect of resolution, and the effect of changing physics.*
+Groups that want to contribute to the Aquaplanet protocol should contact Angel Peinado.
 
-- **Global/Regional LES:** Short (days to weeks) 'LES' experiments at 1km or less. Could be a region (continent) or global. Could be part of the multi-resolution effort (if running 1km or <1km, should be able to run also lower resolution to 10 or 20km). *Goal: What does sub-km scale look like.*
+## <span style="color:darkgreen"> DYAMOND-3: Control, P4K, and aerosol forcing
 
-- **Aerosol Forcing Experiments:** Run one year, either nudged or free running, twice. Once with pre-industrial aerosol emissions, once with present day aerosol emissions. Either specified aerosol or interactive aerosol *Goal: Understand aerosol forcing and aerosol-cloud interactions.*
 
-- **Aquaplanet**: SST Patch experiments at km-scale with aquaplanet. 3 resolutions. *Goal: understand teleconnections and coupling from tropical convection.*
+The protocol of DYAMOND-3 has been described in [Taksuka et al. (2024)](https://link.springer.com/article/10.1186/s40645-024-00668-1). The specifications are:
+* **Configuration**: AMIP
+* **$\int\Delta{t}\partial{t}$**: From January 1, 2020, to February 28, 2021.
+* **$\Delta{x}$**: Less than 5km.
+* **$\Delta{z}$**: Optional to each group.
+* **$\Delta{t}$**: Optional to each group.
+* **Initialization**: Atmosphere is initialized in January 2020. Both land and ocean initialization are up to each modelling group.
+* **P4K**: Simulation with a constant forcing of +4K in the SST field needs to be provided
+* **Aerosol forcing**: A simulation similar to the control by with pre-industrial aerosols is recommended.
 
-- **Coupled Simulations:** 1-2 month coupled simulations, intialized from a given atmospheric state and a suggested ocean state. Possibly also 1 year of coupled simulation. *Goal: understand air-sea coupling and km-scale ocean eddies.*
+Modelling groups have been started to finish DYAMOND-3 control and P4K simulations. Groups that want to contribute to the DYAMOND-3 protocol should contact Daisuke Takasuka.
 
-- **Non Atmospheric Component Simulations:** Other components (e.g. ocean only, ocean-sea ice, sea-ice only, land only) at km-scale are also possible
+
+## <span style="color:dodgerblue"> DYAMOND-4
+The DYAMOND-4 protocol is the result of the discussion during the pre-summit hackathon and the global km-scale summit. The effects of resolution and coupling in representing weather phenomena are the center of these experiments. Three categories of simulations have been discussed.
+
+
+1. **AMIP**: Global storm-resolving simulations are planned with the following specifications:
+   * **$\int\Delta{t}\partial{t}$**: From August 1, 2024, to September 31, 2024.
+   * **$\Delta{x}$**: 2.5km, 5$\,$km, and 10$\,$km. As an option, a finer resolution can also be provided: 1$\,$km scale or finer (hectometer-scale)
+   * **$\Delta{z}$**: Optional to each group.
+   * **$\Delta{t}$**: Optional to each group. But recommended to be similar across resolutions.
+   * **Initialization**: Atmosphere is initialized on August 1, 2024. Both land and ocean initialization are up to each modelling group.
+
+
+2. **LES**: Modelling groups using large-eddy simulations are also welcome to contribute as a complement to storm-resolving models by running hectometer-scale simulations on regional domains. 
+   * **$\int\Delta{t}\partial{t}$**: From August 1, 2024, to September 31, 2024.
+   * **$\Delta{x}$**: At least three different $\Delta{x}$, from 100m to 1$\,$km. An optional simulation with $\Delta{x}$ > 1$\,$km is also recommended.
+   * **$\Delta{z}$**: Optional to each group.
+   * **$\Delta{t}$**: Optional to each group. But recommended to be similar across resolutions.
+   * **Initialization**: The atmosphere is initialized on August 1, 2024. Both land and ocean initialization are up to each modelling group.
+   * **Domain**: It's recommended to use the ORCESTRA domain, following [Fiévet et al. (2026)](https://doi.org/10.22541/essoar.177315810.09022965/v2). Other domains and periods of time can be an alternative, but this would be accompanied by a set of observational data ("no reanalysis") that will facilitate the comparison.
+
+
+3. **Coupled simulations**: Global coupled storm-resolving models are a complement to AMIP simulations. The specifications are:
+   * **$\int\Delta{t}\partial{t}$**: From August 1, 2024, to September 31, 2024.
+   * **$\Delta{x}$**: 2.5km, 5$\,$km, and 10$\,$km in the atmosphere. $\Delta{x}$ in the ocean is the same across resolutions.
+   * **$\Delta{z}$**: Optional to each group.
+   * **$\Delta{t}$**: Optional to each group. But recommended to be similar across resolutions.
+   * **Initialization**: Atmosphere is initialized on August 1, 2024. Both land and ocean initialization are up to each modelling group.
+   * **Physics**: The model configuration should be similar to the AMIP simulation.
+   
+Groups that want to contribute to the DYAMOND-4 protocol should contact Hans Segura.
+
+## <span style="color:lightgreen"> Initialized
+
+There is strong interest in setting up 40-day simulations of the year 2026, in initialised mode, both atmosphere-only and coupled. Ideas will be
+   * **$\int\Delta{t}\partial{t}$**: 12 chunks of 40 days for 2026.
+   * **$\Delta{x}$**: < 5$\,$km in the atmosphere.
+   * **$\Delta{z}$**: Optional to each group.
+   * **$\Delta{t}$**: Optional to each group. 
+   * **Initialization**: Atmosphere is initialized on the first day of each month starting in XXX. Both land and ocean initialization are up to each modelling group.
+   * **Ensamble**: Up to each modelling group.
+   * **Physics**: with and without convection parameterization
+   * **Options**: specific case studies in hindcast mode, using the same framework, resolution hierarchies around particular months, chasing particular phenomena (and this could include regional downscaling), ECOMIP periods
+
+Groups that want to contribute to Initilized protocol should contact Pier Luigi Vidale.
+
+## Resume of simulations
+
+| Simulations | $\Delta{x}$ | $\int\Delta{t}\partial{t}$| FORCING |
+| ----- |----- |----- | ----- |
+| <span style="color:orange">**Idealized**|
+| RCE | |  |  |
+| Aquaplanet-CTRL  | 10, 5, and 2.5$\,$km | 3 to 6 months |Idealized surface and radiation forcing |  
+| Aquaplanet+4$\,$K | 10, 5, and 2.5$\,$km | 3 to 6 months | Similar to Aquaplanet-CTRL with 4$\,$K increment in SST |  
+| <span style="color:darkgreen">**DYAMOND-3**|
+| AMIP-2020-CTRL  | < 5$\,$km | From January 2020 to February 2021 | 2020-2021 |  
+| AMIP-2020+4$\,$K |< 5$\,$km | Similar to AMIP-2020-CTRL |Similar to AMIP-2020-CTRL with 4$\,$K increment in SST  | 
+| AMIP-2020+Pre-Aerosols |< 5$\,$km | Similar to AMIP-2020-CTRL |Similar to AMIP-2020-CTRL with pre-indutrial aerosol concentration |
+| <span style="color:dodgerblue"> **DYAMOND-4**|
+| AMIP-2024  | 10$\,$km, 5$\,$km, and 2.5$\,$km. Optional < 2.5$\,$km| From August to Septemeber 2024 | 2024 |
+| Coupled-2024 | A: 10, 5, and 2.5$\,$km. Optional < 2.5$\; O: unique | From August to Septemeber 2024 | 2024 |
+| LES-2024 | < 1$\,$km | From August to Septemeber 2024 | 2024 | 
+| <span style="color:lightgreen">**Initialized**|
+| AMIP-2026| < 5$\,$km | 12 chunks of 40 days initialized experiments covering 2026 | 2026 |
+
 
 
 # Individual Model Comments
